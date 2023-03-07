@@ -1,0 +1,5 @@
+SAMP_TEST_TEXT // constant declations
+samp_test_text  : snake case // variable names
+sampTestText   : camel case // functtion names
+SampTestText  :pascal case // class names
+samp-test-text: kebab case //folder names

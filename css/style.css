@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@1,300&display=swap');
+
+*,html{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/* header settings */
+.siteHeader{/*only site header */
+    position: absolute;
+    width:100%;
+    height:650px;
+    text-align: center;
+    /* background-image: url('https://images.pexels.com/photos/5483077/pexels-photo-5483077.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'); */
+    background-image: url('../assets/headerBkg.jpg');
+    background-size: cover;
+    font-family: 'Anton', sans-serif;
+    font-size: 80px;
+    box-shadow: 0 0 2px 1px #faf5f6 inset;
+}
+/* dependency */
+.siteHeader > .siteNav{/*site nav */
+    position: relative;
+    width:100%;
+    background-color: #0f0f0d;
+    color: #44186d;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 24px;
+    letter-spacing: 2px;
+    box-shadow: 0 0 14px 1px #faf5f6;
+    /* position: fixed; */
+}
+.siteNav > a{/*a tag settings */
+    position: relative;
+    text-decoration: none;
+    padding-left: 20px;
+    color:#da3f18;
+
+}
+.siteNav > a:hover{
+    color: rgb(13, 203, 203);
+}
+
+/* end of header settings */
+
+/* Main settings */
+.siteMain{
+    position: absolute;
+    width:100%;
+    top:650px;
+ }
+
+.titles{
+    font-size: 50px;
+    color: #ec4a4a;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    letter-spacing: 10px;
+    padding: 30px;
+    text-shadow: 1px 0 3px #120d0e,1px 0 3px #2c140f;
+}
+
+.section1{
+    position: absolute;
+    width:100%;
+    height: 800px;
+    padding: auto;
+   
+}
+.sec1Div{
+    position: relative;
+    float:left;
+    width:45%;
+    height: 500px;
+    padding: 5px;
+    margin: 20px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.div1{
+    padding-top:80px;
+    /* height: 800px; */
+    
+}
+.imgDiv{
+    position: relative;
+    height: 400px;
+    width: 400px;
+    border-radius: 20%;
+    box-shadow: 0 0 8px 5px rgb(85, 83, 83);
+}
+.section2{
+    position: absolute;
+    top: 800px;
+    width:100%;
+    height: 1000px;
+    
+}
+
+.section2 > #video{
+    position: absolute;
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    opacity: 0.6;
+    
+ }
+ .section2 > .service_content{
+    top:160px;
+    position: relative;
+    color: #c4c6cb;
+    font-size: 30px;
+    padding: 50px;
+    
+ }
+ .section2 >.tpos{
+    position: relative;
+    color: #f52323;
+    text-shadow: 5px 0 10px #120d0e,5px 0 10px #691605;
+ }
+.section3{
+  
+    top:1800px;
+    position: absolute;
+    width:100%;
+    height: 800px;
+ }
+
+
+.section4{
+    top:2600px;
+    position: absolute;
+    left:0;
+    right:0;
+    width:90%;
+    height: 1100px;
+    box-shadow: 0 0 14px 1px #e3dfdf;
+}
+
+
+section:nth-child(even){
+  
+    margin: 30px auto;
+    
+   
+   
+}
+
+.sectionFont{
+    padding: 100px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 25px;
+}
+/* end of main settings */
+
+/* form settings */
+.contactForm{
+    border: 1px solid black;
+    text-align: center;
+    padding: 50px;
+    /* box-shadow: 0 5px 15px 10px #00000055; */
+    box-shadow: 0 5px 15px 10px #0a090955;
+}
+.contactForm > label{
+    color:#c00707;
+    font-size: 20px;
+}
+.contactForm > input[type='text'], input[type='email'],select, textarea{
+    width: 60%;
+    font-size: 20px;
+}
+
+
+/* end of form settings */
+
+/* footer settings */
+
+
+.siteFooter{
+    position: absolute;
+    top:4600px;
+    padding-top: 20px;
+    width: 100%;
+    height: 200px;
+    bottom:0;
+   
+    text-align: center;
+    background-color: #cbcbc5;
+    color:rgb(14, 17, 20);
+}
+.social{
+    padding:50px;
+    margin:10px;
+
+}
+.social >a{
+    color:rgb(23, 54, 74);
+    font-size: 25px;
+    padding: 20px;
+}
+/* end of footer settings */
+
+
+/* media query */
+@media only screen and (max-width: 600px){
+
+    /* header settings */
+/* dependency */
+.siteHeader > .siteNav{/*site nav */
+    width:45%;
+    padding: 10px;
+    height: 40%;
+    font-size: 24px;
+    letter-spacing: 2px;
+    padding-top: 30px;
+}
+.siteNav > a{/*a tag settings */
+   padding-top: 15px;
+   display: block;
+   padding-left: 15px;
+}
+
+/* end of header settings */
+
+
+/* Main settings */
+
+.titles{
+    font-size: 28px;
+    letter-spacing: 2px;
+    padding: 20px;
+    padding-left: 5px;
+    text-align: center;
+}
+.section1{
+    height: 700px;
+}
+.sec1Div{
+    float:none;
+    width: 100%;
+    height: 350px;
+    margin: 20px;
+    text-align: center;
+    border-radius: 15px;
+}
+.div1{
+    padding-top:20px;
+    font-size: 20px;
+}
+.imgDiv{
+    height: 200px;
+    width: 200px;
+}
+
+.section2{
+    top: 700px;
+    height: 1300px;
+}
+
+.section3{
+    /* padding: 10px; */
+    top:2100px;
+    height: 1300px;
+ }
+
+.section4{
+    top:3400px;
+    width:100%;
+    height: 900px;
+}
+
+.sectionFont{
+    padding: 10px;
+    font-size: 25px;
+}
+/* end of main settings */
+
+/* form settings */
+.contactForm{
+ width: 100%;
+ padding: 15px;
+}
+
+.contactForm > input[type='text'], input[type='email'],select, textarea{
+    width: 100%;
+}
+
+/* end of form settings */
+
+/* footer settings */
+.siteFooter{
+     top:5000px;
+    height: 250px;
+ }
+/* end of footer settings */
+
+}
